@@ -23,7 +23,7 @@ for(let i=0; i<boxer.length;i++){
     //quando alguem clica na caixa 
     boxer[i].addEventListener("click",function(){
 
-        let elemento;
+        let elemento=checkEl(player1,player2);
 
         if(player1==player2){
             // x
@@ -48,13 +48,42 @@ for(let i=0; i<boxer.length;i++){
         }else{
            player2++; 
         }
+    } 
+    
+    //Checar quem venceu 
 
-        }
+    checkinCondicional();
 
-
-
+        
 
     });
+}
+
+//ver qem vai jogar 
+
+function checkEl(player1,player2){
+    if(player1==player2){
+        //x
+        elemento=x;
+    }else{
+        //o
+        elemento=o;
+    }
+    return elemento;
+}
+
+//ver quem ganhou 
+
+function checkinCondicional(){
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
+    let b1=document.getElementById("block-1")
 }
 
 
