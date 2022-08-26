@@ -114,6 +114,38 @@ function checkinCondicional(){
         }
     }
 
+        
+    if(b7.childNodes.length>0 && b8.childNodes.length>0 && b9.childNodes.length>0){
+        let b7child=b7.childNodes[0].className;
+        let b8child=b8.childNodes[0].className;
+        let b9child=b9.childNodes[0].className;
+
+        if(b7child=='x' && b8child=='x' && b9child=='x'){
+            //Quando o x venceu 
+            console.log('x venceu');
+
+        } else if(b7child=='o' && b8child=='o' && b9child=='o'){
+            // Quando o o venceu
+            console.log('o venceu');
+        }
+    }
+
+    //Vertical 
+    if(b1.childNodes.length>0 && b4.childNodes.length>0 && b7.childNodes.length>0){
+        let b1child=b1.childNodes[0].className;
+        let b4child=b4.childNodes[0].className;
+        let b7child=b7.childNodes[0].className;
+
+        if(b1child=='x' && b4child=='x' && b7child=='x'){
+            //Quando o x venceu 
+            console.log('x venceu');
+
+        } else if(b1child=='o' && b4child=='o' && b7child=='o'){
+            // Quando o o venceu
+            console.log('o venceu');
+        }
+    }
+
 
 
 
